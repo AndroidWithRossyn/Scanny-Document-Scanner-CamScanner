@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/import_from_gallery"
+        android:icon="@drawable/ic_import_gallery"
+        android:iconTint="@color/black"
+        android:title="@string/importFromGallery" />
+    <item
+        android:id="@+id/sort_by"
+        android:icon="@drawable/ic_sort_by"
+        android:title="@string/sortBy" />
+    <item
+        android:id="@+id/share_all"
+        android:icon="@drawable/ic_share_all"
+        android:iconTint="@color/black"
+        android:title="@string/shareAll"
+        android:visible="true" />
+    <item
+        android:id="@+id/view_mode"
+        android:icon="@drawable/ic_view_mode"
+        android:title="@string/viewMode">
+        <menu>
+            <item
+                android:id="@+id/grid_view"
+                android:icon="@drawable/ic_grid"
+                android:iconTint="@color/black"
+                android:title="@string/grid" />
+            <item
+                android:id="@+id/list_view"
+                android:icon="@drawable/ic_list"
+                android:iconTint="@color/black"
+                android:title="@string/list" />
+        </menu>
+    </item>
+</menu>

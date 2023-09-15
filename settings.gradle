@@ -1,0 +1,4 @@
+include ':sticker'
+include ':scanlibrary'
+include ':app'
+rootProject.name = "Scanny"

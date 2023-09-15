@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fg_color"
+            android:elevation="5dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/fg_color">
+
+                <ImageView
+                    android:id="@+id/iv_drawer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_7sdp"
+                    android:onClick="onClick"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/ic_side_menu" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_toEndOf="@+id/iv_drawer"
+                    android:fontFamily="@font/inter_bold"
+                    android:singleLine="true"
+                    android:text="@string/app_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18sdp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_folder"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:layout_toStartOf="@+id/iv_search"
+                    android:onClick="onClick"
+                    android:padding="@dimen/_1sdp"
+                    android:src="@drawable/folder" />
+
+                <ImageView
+                    android:id="@+id/iv_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:layout_toStartOf="@+id/iv_more"
+                    android:onClick="onClick"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/ic_search" />
+
+                <ImageView
+                    android:id="@+id/iv_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:onClick="onClick"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_7sdp"
+                    android:src="@drawable/ic_more" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:background="@drawable/search_bar_bg"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_close_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:onClick="onClick"
+                    android:padding="@dimen/_7sdp"
+                    android:src="@drawable/ic_search_small" />
+
+                <EditText
+                    android:id="@+id/et_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_36sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_7sdp"
+                    android:layout_toStartOf="@+id/iv_clear_txt"
+                    android:layout_toEndOf="@+id/iv_close_search"
+                    android:background="@color/transparent"
+                    android:cursorVisible="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/inter_regular"
+                    android:hint="Search for Document..."
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:textColor="#858997"
+                    android:textColorHint="#a2a8b9"
+                    android:textSize="@dimen/_12sdp" />
+
+                <ImageView
+                    android:id="@+id/iv_clear_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:onClick="onClick"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/ic_close_black_24dp"
+                    android:tint="#858997"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tag_tabs"
+                style="@style/CustomTabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@color/fg_color"
+                app:tabBackground="@drawable/tab_selector"
+                app:tabGravity="fill"
+                app:tabIndicator="@color/white"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@color/white"
+                app:tabTextColor="@color/unselected_txt_color" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ly_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/_30sdp"
+                    android:visibility="visible">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieLogo"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_centerInParent="true"
+                        android:visibility="visible"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/empty" />
+
+                    <TextView
+                        android:id="@+id/tv_empty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:fontFamily="@font/inter_medium"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/noDocumentScan"
+                        android:textColor="@color/unselected_txt_color"
+                        android:textSize="@dimen/_15sdp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="77dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/left_rounded_bg"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/iv_group_camera"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:onClick="onClick"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/camera" />
+
+                <!--       <ImageView
+                    android:id="@+id/iv_group_camera2"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:onClick="onClick"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_camera" />-->
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

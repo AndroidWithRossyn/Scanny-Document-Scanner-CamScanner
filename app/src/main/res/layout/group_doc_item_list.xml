@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/docLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_margin="@dimen/_6sdp">
+
+        <com.scanny.scanner.document_view.roundshapeImageview
+            android:id="@+id/iv_doc"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_33sdp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bottom_ly_bg">
+
+            <TextView
+                android:id="@+id/tv_doc_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_toStartOf="@+id/iv_note"
+                android:fontFamily="@font/inter_medium"
+                android:singleLine="true"
+                android:text="Page  1"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_12sdp" />
+
+            <ImageView
+                android:id="@+id/iv_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_toStartOf="@+id/iv_doc_item_more"
+                android:src="@drawable/ic_note"
+                android:tint="#FFFFFF"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_doc_item_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:paddingEnd="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_7sdp"
+                android:src="@drawable/ic_more"
+                android:tint="#FFFFFF" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/newScanLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_margin="@dimen/_6sdp"
+        android:background="@drawable/rounded_border_bg"
+        android:visibility="gone">
+
+        <com.scanny.scanner.document_view.roundshapeImageview
+            android:id="@+id/iv_cam_doc"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/camera_plus_outline" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_cam_doc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:fontFamily="@font/inter_medium"
+            android:singleLine="true"
+            android:text="@string/tapToAddNew"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_12sdp" />
+    </RelativeLayout>
+</LinearLayout>

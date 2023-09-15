@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_share_all"
+        android:iconTint="@color/black"
+        android:title="@string/share" />
+    <item
+        android:id="@+id/import_from_gallery"
+        android:icon="@drawable/ic_import_gallery"
+        android:title="@string/importFromGallery" />
+    <item
+        android:id="@+id/save_to_gallery"
+        android:icon="@drawable/ic_save_as_gallery"
+        android:iconTint="@color/black"
+        android:title="@string/saveToGallery" />
+    <item
+        android:id="@+id/rename"
+        android:icon="@drawable/ic_rename"
+        android:iconTint="@color/black"
+        android:title="@string/rename" />
+    <item
+        android:id="@+id/send_to_mail"
+        android:icon="@drawable/pic_send_to_mail"
+        android:iconTint="@color/black"
+        android:title="@string/sendToMail" />
+    <item
+        android:id="@+id/delete"
+        android:icon="@drawable/ic_delete"
+        android:iconTint="@color/black"
+        android:title="@string/delete" />
+</menu>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#005bf6</color>
+    <color name="purple_700">#005bf6</color>
+    <color name="teal_200">#3b3958</color>
+    <color name="teal_700">#3b3958</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="bg_color">#f0f2f7</color>
+    <color name="bg_color1">#f5f5f5</color>
+    <color name="black_translucent">#5025c4a4</color>
+    <color name="colorAccent">#005bf6</color>
+    <color name="colorPrimary">#005bf6</color>
+    <color name="colorPrimaryDark">#005bf6</color>
+
+    <color name="editor_light_color">#e8e9ed</color>
+    <color name="error_color_material_dark">#ff7043</color>
+    <color name="error_color_material_light">#ff5722</color>
+    <color name="fg_color">#ffffff</color>
+
+    <color name="light_bg_color">#eef0f3</color>
+    <color name="light_txt_color">#005bf6</color>
+    <color name="orange">#ffff900d</color>
+
+    <color name="selected_txt_color">#000000</color>
+    <color name="txt_color">#000000</color>
+
+
+    <color name="sticker_border">#ffffff</color>
+
+    <color name="tab_indicator_color">#005bf6</color>
+    <color name="tab_unselected_txt_color">#585d64</color>
+    <color name="toolbar_color">#005bf6</color>
+    <color name="transparent">#00000000</color>
+    <color name="black_transparent">#37000000</color>
+
+    <color name="unselected_txt_color">#9aa1ae</color>
+
+    <color name="yellow">#80ffff01</color>
+
+    <color name="viewfinder_border">#ffffff</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <color name="viewfinder_mask">#b3000000</color>
+
+    <color name="text_second">#ff888893</color>
+    <color name="darkpink">#ff0a91</color>
+
+    <color name="subscribe_dialog_one_text">#a0a0a0</color>
+    <color name="dialog_bg_color">#FFFFFF</color>
+
+    <color name="ucrop_color_toolbar">@color/colorPrimary</color>
+    <color name="ucrop_color_statusbar">@color/colorPrimary</color>
+    <color name="ucrop_color_widget_text">#FF000000</color>
+    <color name="ucrop_color_active_controls_color">@color/colorPrimary</color>
+    <color name="ucrop_color_toolbar_widget">@color/black</color>
+    <color name="et_text_color">@color/black</color>
+    <color name="text_color_white">@color/white</color>
+    <!--    <color name="ucrop_color_black">#000</color>-->
+    <!--    <color name="ucrop_color_white">#FFF</color>-->
+
+</resources>

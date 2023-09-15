@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorAccent">#25c4a4</color>
+    <color name="colorPrimary">#25c4a4</color>
+    <color name="colorPrimaryDark">#25c4a4</color>
+
+    <color name="bg_color">#39393A</color>
+    <color name="bg_color1">#121212</color>
+    <!--    <color name="bg_color1">#1B1A1A</color>-->
+    <color name="fg_color">#0D0D0D</color>
+
+    <color name="black">#FFFFFFFF</color>
+    <color name="white">#FF000000</color>
+
+    <color name="toolbar_color">#25c4a4</color>
+
+    <color name="selected_txt_color">#FFFFFF</color>
+    <color name="txt_color">#FFFFFF</color>
+    <color name="editor_light_color">#121212</color>
+    <color name="unselected_txt_color">#9aa1ae</color>
+    <color name="dialog_bg_color">#39393A</color>
+    <!--<color name="textPrimary">#FFFFFF</color>
+    <color name="textSecondary">#CCCCCC</color>-->
+
+    <color name="ucrop_color_toolbar">@color/colorPrimary</color>
+    <color name="ucrop_color_statusbar">@color/colorPrimary</color>
+    <color name="ucrop_color_widget_text">#FFFFFF</color>
+    <color name="ucrop_color_active_controls_color">@color/colorPrimary</color>
+    <color name="ucrop_color_toolbar_widget">@color/white</color>
+
+    <color name="et_text_color">@color/black</color>
+    <color name="text_color_white">@color/white</color>
+    <!--    <color name="ucrop_color_black">#FFF</color>-->
+    <!--    <color name="ucrop_color_white">#000</color>-->
+
+</resources>

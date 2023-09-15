@@ -1,0 +1,128 @@
+plugins {
+    id 'com.android.application'
+    id 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+}
+configurations.all {
+    resolutionStrategy { force 'androidx.core:core-ktx:1.6.0' }
+}
+android {
+    compileSdkVersion 33
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.templatemela.Scanny"
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters 'armeabi-v7a', "arm64-v8a", 'x86', 'x86_64'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    sourceSets {
+        main {
+            assets {
+                srcDirs 'src\\main\\assets'
+            }
+        }
+    }
+
+    aaptOptions {
+        noCompress "tflite"
+        noCompress "lite"
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+
+    /* Reduce apk size */
+    /*splits {
+        abi {
+            enable true
+            reset()
+            include 'arm64-v8a', 'armeabi-v7a', 'mips', 'mips64', 'x86', 'x86_64'
+            universalApk false
+        }
+    }*/
+
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation project(path: ':scanlibrary')
+    implementation project(path: ':sticker')
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    implementation 'com.google.android.gms:play-services-ads:20.2.0'
+//    implementation group: 'com.itextpdf', name: 'itextpdf', version: '5.5.9'
+    implementation fileTree(dir: 'libs', include: '*.jar')
+    implementation files('libs/itextpdf-5.5.13.2.jar')
+
+    implementation group: 'cz.msebera.android', name: 'httpclient', version: '4.4.1.1'
+    implementation 'com.github.pqpo:SmartCropper:v2.1.3'
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+    implementation 'com.divyanshu.colorseekbar:colorseekbar:1.0.2'
+
+    implementation 'androidx.annotation:annotation:1.0.0'
+    implementation 'com.github.QuadFlask:colorpicker:0.0.15'
+    implementation 'com.kyanogen.signatureview:signature-view:1.2'
+    implementation 'com.github.nguyenhoanglam:ImagePicker:1.4.3'
+    implementation 'com.takwolf.android:aspectratio:0.3.0'
+    implementation 'com.huangyz0918:androidwm-light:0.1.2'
+    implementation 'com.burhanrashid52:photoeditor:1.1.1'
+
+    implementation 'com.google.android.gms:play-services-vision:20.1.3'
+
+    implementation group: 'org.bouncycastle', name: 'bcprov-jdk15to18', version: '1.64'
+//Thanks for using https://jar-download.com
+    implementation 'jp.wasabeef:richeditor-android:2.0.0'
+//    implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+    implementation 'com.google.zxing:core:3.3.3'
+    // https://mvnrepository.com/artifact/com.github.google/cameraview
+//    implementation group: 'com.github.google', name: 'cameraview', version: '6ceaf867d3'
+
+    api 'com.otaliastudios:cameraview:2.7.1'
+
+    implementation 'com.github.yalantis:ucrop:2.2.6'
+    implementation 'com.edmodo:cropper:1.0.1'
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.onesignal:OneSignal:4.4.0'
+    def lottieVersion = "3.4.0"
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+
+    implementation 'com.infideap.drawerbehavior:drawer-behavior:1.0.4'
+
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+}

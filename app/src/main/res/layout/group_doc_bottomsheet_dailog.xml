@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:background="@color/dialog_bg_color"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/_12sdp"
+    android:paddingEnd="@dimen/_12sdp"
+    android:paddingBottom="@dimen/_7sdp">
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:fontFamily="@font/inter_medium"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Meetings notes.pdf"
+        android:textColor="@color/txt_color"
+        android:textSize="@dimen/_15sdp" />
+
+    <TextView
+        android:id="@+id/tv_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_14sdp"
+        android:fontFamily="@font/inter_medium"
+        android:gravity="center"
+        android:maxLength="11"
+        android:text="2020-08-14"
+        android:textColor="@color/unselected_txt_color"
+        android:textSize="@dimen/_11sdp" />
+
+    <ScrollView
+        android:id="@+id/scrLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dialog_bg_color"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dialog_bg_color"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_3sdp"
+            android:paddingEnd="@dimen/_3sdp">
+
+            <RelativeLayout
+                android:id="@+id/rl_save_as_pdf"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_42sdp">
+
+                <ImageView
+                    android:id="@+id/iv_save_pdf"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_1sdp"
+                    android:src="@drawable/ic_save_as_pdf" />
+
+                <TextView
+                    android:id="@+id/txtSavePdf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_toEndOf="@+id/iv_save_pdf"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="@string/saveAsPdf"
+                    android:textColor="@color/txt_color"
+                    android:textSize="@dimen/_13sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_share"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_42sdp">
+
+                <ImageView
+                    android:id="@+id/iv_share"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_share_all" />
+
+                <TextView
+                    android:id="@+id/txtShare"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_toEndOf="@+id/iv_share"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="@string/share"
+                    android:textColor="@color/txt_color"
+                    android:textSize="@dimen/_13sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_save_to_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_42sdp">
+
+                <ImageView
+                    android:id="@+id/iv_save_gallery"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_1sdp"
+                    android:src="@drawable/ic_save_as_gallery" />
+
+                <TextView
+                    android:id="@+id/txtGallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_toEndOf="@+id/iv_save_gallery"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="@string/saveToGallery"
+                    android:textColor="@color/txt_color"
+                    android:textSize="@dimen/_13sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_send_to_mail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_42sdp">
+
+                <ImageView
+                    android:id="@+id/iv_send_mail"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_email" />
+
+                <TextView
+                    android:id="@+id/txtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_toEndOf="@+id/iv_send_mail"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="@string/sendToMail"
+                    android:textColor="@color/txt_color"
+                    android:textSize="@dimen/_13sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_delete"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_42sdp">
+
+                <ImageView
+                    android:id="@+id/iv_delete"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_1sdp"
+                    android:src="@drawable/ic_delete"
+                    android:tint="@color/black" />
+
+                <TextView
+                    android:id="@+id/txtDelete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_toEndOf="@+id/iv_delete"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="@string/delete"
+                    android:textColor="@color/txt_color"
+                    android:textSize="@dimen/_13sdp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

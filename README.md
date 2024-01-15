@@ -13,7 +13,11 @@
 
 - ⚡  If You want to join us than message on <a href="https://wa.me/+919694260426/">Whatsapp</a> , <a href="https://t.me/banrossyn">Telegram</a>  & <a href="banrossyn@gmail.com">Mail</a>.
 
-> Note: `-- Apache License 2.0` you can't Publish any Source code without permission.
+> Note: you can't Publish any Source code without permission. This project has been purchased from TemplateMela.
+
+> item Link: https://codecanyon.net/item/cam-scanner-android-app-with-admob-ads/32839108
+
+# NOTE: This project is posted only for learning purpose.
 # 
 <p align="center">
     <a href="https://www.paypal.com/paypalme/banrossyn">
@@ -32,30 +36,6 @@
 .
 .
 
->Paid Source Code Available only in 12 USD
-  <a href="">Download Demo</a>. 
-<p align="center">
-    <a href="">
-      <img src="https://user-images.githubusercontent.com/118904953/213910602-98a6ad46-da0c-4646-89ce-1ef9d9940a36.png" width="1280" />
-    </a>
-  </p>
-  
-
-<p align="center">
-    <a href="https://github.com/OmaPrakash/Whatsapp-Status-Saver/blob/main/StausSaver-debug.apk?raw=true">
-      <img src="https://user-images.githubusercontent.com/118904953/203556484-c491adb2-cddc-414b-b7f7-6b55e4e2f006.png" width ="100" />
-    </a>
-      <a href="https://wa.me/+919694260426">
-      <img src="https://user-images.githubusercontent.com/118904953/203558166-f378dbf5-0677-4537-b43b-b4f9d5f58dab.png" width ="100" />
-    </a>
-     <a href="banrossyn@gmail.com">
-      <img src="https://user-images.githubusercontent.com/118904953/203559109-cae9680e-a035-4a3d-ab02-ecbe03997b9e.png" width ="100" />
-    </a>
-       <a href="https://t.me/banrossyn">
-      <img src="https://user-images.githubusercontent.com/118904953/203559125-f73d94b3-c636-4366-af15-516d15bcfc71.png" width ="100" />
-    </a>
-  </p>
-  
 
 # About this App:
 It is a PDF document scanner app that can turn your phone into a scanner. You can scan anything such as photos, documents, receipts, and so on.
@@ -257,22 +237,5 @@ Please consider rating the app if you are satisfied with the product. Thank you.
 
 </table>
 
-
-    
-# License: 
- ```
-  Copyright 2020 Rossyn
-  Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements. 
-  See the NOTICE file distributed with this work for additional information regarding copyright ownership. 
-  The ASF licenses this file to you under the Apache License, Version 2.0 (the "License"); 
-  you may not use this file except in compliance with the License. 
-  You may obtain a copy of the License at 
-  
-  http://www.apache.org/licenses/LICENSE-2.0 
-  
-  Unless required by applicable law or agreed to in writing, software distributed under 
-  the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
-  either express or implied. See the License for the specific language governing permissions and limitations under the License."
-  
   
 
